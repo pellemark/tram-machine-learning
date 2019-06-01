@@ -3,18 +3,15 @@ var storedModel, video, renderPredictions;
 var videos = [
     "videos/1.mp4",
     "videos/2.mp4",
-    // "videos/3.mp4",
     "videos/4.mp4",
     "videos/5.mp4",
-    // "videos/6.mp4",
-    // "videos/7.mp4",
     "videos/8.mp4",
     "videos/9.mp4",
     "videos/10.mp4",
     "videos/11.mp4",
     "videos/12.mp4",
-    // "videos/13.mp4",
     "videos/14.mp4",
+    "videos/15.mp4",
 ];
 
 jQuery(function () {
@@ -139,8 +136,8 @@ jQuery(function () {
         // Drawing the brake distance
         ctx.beginPath();
         ctx.moveTo(150, videoContainerHeight);
-        ctx.lineTo(videoContainerWidth / 3 + 100, videoContainerHeight / 2);
-        ctx.lineTo(videoContainerWidth / 3 * 2 - 100, videoContainerHeight / 2);
+        ctx.lineTo(videoContainerWidth / 3 + 125, videoContainerHeight / 2);
+        ctx.lineTo(videoContainerWidth / 3 * 2 - 125, videoContainerHeight / 2);
         ctx.lineTo(videoContainerWidth - 150, videoContainerHeight);
 
 
