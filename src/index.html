@@ -8,15 +8,22 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/vue-component.js"></script>
 
     <!-- Vue.js -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://vuejs.org/js/vue.js"></script>
+
+    <!-- Tensorflow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+
+    <!-- CocoSSD model -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-md-9">
-            <video src=""></video>
+    <div class="row" id="vue-component">
+        <div class="col-md-9 no-padding-right">
+            <video id="image-source" src=""></video>
         </div>
 
         <div class="col-md-3 controller-panel">
