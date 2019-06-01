@@ -6,3 +6,12 @@ body {
     background-color: red;
     height: 1000px;
 }
+
+#image-source {
+    width: 100%;
+}
+
+/* Utility classes */
+.no-padding-right {
+    padding-right: 0 !important;
+}
