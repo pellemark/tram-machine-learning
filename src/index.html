@@ -4,11 +4,14 @@
     <title>Tram Machine Learning</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lane-detection.js"></script>
     <script src="assets/js/vue-component.js"></script>
+    <script src="assets/js/jquery.ba-throttle-debounce.min.js"></script>
 
     <!-- Vue.js -->
     <script src="https://vuejs.org/js/vue.js"></script>
@@ -21,14 +24,25 @@
 </head>
 
 <body>
-    <div class="row" id="vue-component">
-        <div class="col-md-9 no-padding-right">
-            <video id="image-source" src=""></video>
-        </div>
-
-        <div class="col-md-3 controller-panel">
-
+<div id="vue-component">
+    <div class="loading-overlay">
+        <div class="loading-overlay-inner">
+            <img src="assets/images/loading.gif" alt="">
+            <h4>Loading the model weights...</h4>
         </div>
     </div>
+
+    <div class="application">
+        <div class="no-padding-right video-container">
+            <video id="image-source" src="videos/1.mp4" autoplay="autoplay" width="800px" height="800px" muted></video>
+            <!--            <img id="image-source" src="videos/sample-img.png" width="800px" height="800px">-->
+            <canvas id="canvas" width="800px" height="800px"></canvas>
+        </div>
+
+<!--        <div class="speed-controller">-->
+<!--            <div class="speed-slider"></div>-->
+<!--        </div>-->
+    </div>
+</div>
 </body>
 </html>
